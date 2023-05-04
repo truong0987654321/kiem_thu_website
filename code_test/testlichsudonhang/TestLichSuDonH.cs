@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 namespace testlichsudonhang
 {
     [TestClass]
-    public class UnitTest1
+    public class TestLichSuDonH
     {
         private IWebDriver driver;
         private readonly string baseUrl = "http://localhost/Lopthu3_Tiet12345_Nhom8/do_an/index.php?act=dn#chihuong";
@@ -26,7 +26,7 @@ namespace testlichsudonhang
 
             //các bước đăng nhập tài khoản khách hàng
             driver.FindElement(By.Id("username")).SendKeys(text: "truong123");
-            driver.FindElement(By.Id("password")).SendKeys(text: "a");
+            driver.FindElement(By.Id("password")).SendKeys(text: "truong");
             driver.FindElement(By.Id("login-btn")).Click();
 
             //bỏ qua thông báo
@@ -37,19 +37,24 @@ namespace testlichsudonhang
             //click vào trang sản phẩm
             driver.FindElement(By.Id("sanphamtest")).Click();
 
-            //click vào "cho vỏ hàng" ở sản phẩm đầu tiên
+            //click vào "cho vỏ hàng" ở sản phẩm có tên "Samsung Galaxy A32 4G 6GB/128GB"
             IWebElement firstButton = driver.FindElements(By.TagName("button"))[15];
             firstButton.Click();
 
+            //bỏ qua thông báo
             alert.Accept();
             driver.Navigate().Refresh();
 
+            //click giỏ hàng
             driver.FindElement(By.Id("testgiohang")).Click();
 
+            //click tiêp tục mua hàng
             driver.FindElement(By.Id("tieptucmuahang")).Click();
 
+            //click vào trang sản phẩm
             driver.FindElement(By.Id("sanphamtest")).Click();
 
+            //click vào "cho vỏ hàng" ở sản phẩm có tên "iPhone 13 Pro Max 128GB"
             IWebElement btn2 = driver.FindElements(By.TagName("button"))[1];
             btn2.Click();
 
@@ -129,7 +134,7 @@ namespace testlichsudonhang
             driver.Navigate().GoToUrl(baseUrl);
             //các bước đăng nhập
             driver.FindElement(By.Id("username")).SendKeys(text: "truong123");
-            driver.FindElement(By.Id("password")).SendKeys(text: "a");
+            driver.FindElement(By.Id("password")).SendKeys(text: "truong");
             driver.FindElement(By.Id("login-btn")).Click();
 
             //bỏ qua thông báo
@@ -140,7 +145,7 @@ namespace testlichsudonhang
             //click vào trang sản phẩm
             driver.FindElement(By.Id("sanphamtest")).Click();
 
-            //click vào "cho vỏ hàng" ở sản phẩm đầu tiên
+            //click vào "cho vỏ hàng" ở sản phẩm có tên "Samsung Galaxy A32 4G 6GB/128GB"
             IWebElement firstButton = driver.FindElements(By.TagName("button"))[15];
             firstButton.Click();
 

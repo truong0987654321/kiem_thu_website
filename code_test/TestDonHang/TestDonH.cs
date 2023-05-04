@@ -10,7 +10,7 @@ using System.Linq;
 namespace TestDonHang
 {
     [TestClass]
-    public class UnitTest1
+    public class TestDonH
     {
         private IWebDriver driver;
         private readonly string baseUrl = "http://localhost/Lopthu3_Tiet12345_Nhom8/do_an/index.php?act=dn#chihuong";
@@ -27,7 +27,7 @@ namespace TestDonHang
 
             //đăng nhập khách hàng
             driver.FindElement(By.Id("username")).SendKeys(text: "truong123");
-            driver.FindElement(By.Id("password")).SendKeys(text: "a");
+            driver.FindElement(By.Id("password")).SendKeys(text: "truong");
             driver.FindElement(By.Id("login-btn")).Click();
 
             //bỏ thông báo
@@ -156,7 +156,7 @@ namespace TestDonHang
 
             //đăng nhập khách hàng
             driver.FindElement(By.Id("username")).SendKeys(text: "truong123");
-            driver.FindElement(By.Id("password")).SendKeys(text: "a");
+            driver.FindElement(By.Id("password")).SendKeys(text: "truong");
             driver.FindElement(By.Id("login-btn")).Click();
 
             //bỏ qua thông báo 

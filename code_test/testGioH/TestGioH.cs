@@ -7,7 +7,7 @@ using System.Threading;
 namespace testGioH
 {
     [TestClass]
-    public class UnitTest1
+    public class TestGioH
     {
         private IWebDriver driver;
         private readonly string baseUrl = "http://localhost/Lopthu3_Tiet12345_Nhom8/do_an/index.php?act=sp#chihuong";

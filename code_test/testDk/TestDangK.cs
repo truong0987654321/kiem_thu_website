@@ -22,8 +22,8 @@ namespace testDk
         [TestMethod]
         public void Dk1()
         {
-            //nhập đúng đăng ký
             driver.Navigate().GoToUrl(baseUrl);
+            //nhập đúng đăng ký
             driver.FindElement(By.Id("tendnhap")).SendKeys(text: "nhom06");
             driver.FindElement(By.Id("tennguoidung")).SendKeys(text: "nhom06");
             driver.FindElement(By.Id("matkhau")).SendKeys(text: "nhom06");

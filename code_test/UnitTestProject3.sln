@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testDn", "UnitTestProject3\testDn.csproj", "{3145B52A-91C9-4920-95DF-0A590782A818}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testDN", "UnitTestProject3\testDN.csproj", "{3145B52A-91C9-4920-95DF-0A590782A818}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testDk", "testDk\testDk.csproj", "{C3669944-3851-4632-A480-FD65B1A6F47D}"
 EndProject
